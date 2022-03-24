@@ -1,1 +1,1 @@
-web: gunicorn tr1bune.wsgi --log-file -
+web: gunicorn tr1bune.wsgi:application --log-file -
