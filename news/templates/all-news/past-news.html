@@ -10,8 +10,11 @@
     <!-- displaying News articles -->
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
       <h2 class="text-center"> {{ news_item.title }} </h2>
+      <h5 class="tect-center"> {{news_item.post}}</h5>
     </div>
-
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <img style="width: 80%; height: 250px;" src="{{news_item.artcle_image.url}}" alt="" class="img-responsive">
+      </div>
   </div>
 
   {% empty %}
